@@ -1,6 +1,6 @@
 package com.hk.autotest.api.exception;
 
-import com.hk.autotest.common.CapException;
+import com.hk.autotest.exception.CapException;
 
 public class APIException extends CapException  {
 

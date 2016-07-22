@@ -1,4 +1,6 @@
-package com.hk.autotest.common;
+package com.hk.autotest.exception;
+
+import com.hk.autotest.common.NestedExceptionUtils;
 
 public class CapException extends RuntimeException {
 	private static final long serialVersionUID = 5439915454935047936L;

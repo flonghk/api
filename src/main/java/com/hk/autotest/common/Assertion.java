@@ -73,8 +73,8 @@ public class Assertion {
 							locator, timeOutInSeconds));
 		}
 
-		pass(String.format("Expected element by locator (%s) is present",
-				locator));
+		//pass(String.format("Expected element by locator (%s) is present",
+		//		locator));
 
 	}
 
@@ -119,8 +119,8 @@ public class Assertion {
 					.format("Expected element by locator (%s) is not present within %d seconds",
 							locator, timeOutInSeconds));
 		}
-		pass(String.format("Expected elements by locator (%s) is present",
-				locator));
+		//pass(String.format("Expected elements by locator (%s) is present",
+		//		locator));
 	}
 
 	/**
@@ -138,7 +138,7 @@ public class Assertion {
 		}
 
 		if (StringUtils.isNotBlank(message)) {
-			pass(message);
+			//pass(message);
 		}
 
 	}
@@ -168,7 +168,7 @@ public class Assertion {
 			failNotEquals(Boolean.valueOf(condition), Boolean.FALSE, message); // TESTNG-81
 		}
 		if (StringUtils.isNotBlank(message)) {
-			pass(message);
+			//pass(message);
 		}
 	}
 
@@ -234,16 +234,16 @@ public class Assertion {
 	public static void assertEquals(Object actual, Object expected,
 			String message) {
 		if ((expected == null) && (actual == null)) {
-			pass(String.valueOf(actual), String.valueOf(expected), message);
+			//pass(String.valueOf(actual), String.valueOf(expected), message);
 			return;
 		}
 		if (expected != null) {
 			if (expected.getClass().isArray()) {
 				assertArrayEquals(actual, expected, message);
-				pass(String.valueOf(actual), String.valueOf(expected), message);
+				//pass(String.valueOf(actual), String.valueOf(expected), message);
 				return;
 			} else if (expected.equals(actual)) {
-				pass(String.valueOf(actual), String.valueOf(expected), message);
+				//pass(String.valueOf(actual), String.valueOf(expected), message);
 				return;
 			}
 		}
@@ -313,7 +313,7 @@ public class Assertion {
 		} else if (!(Math.abs(expected - actual) <= delta)) {
 			failNotEquals(new Double(actual), new Double(expected), message);
 		}
-		pass(message);
+		//pass(message);
 	}
 
 	/**
@@ -361,7 +361,7 @@ public class Assertion {
 			failNotEquals(new Float(actual), new Float(expected), message);
 		}
 
-		pass(message);
+		//pass(message);
 	}
 
 	/**
@@ -581,7 +581,7 @@ public class Assertion {
 			fail(formatted + "expected object to not be null");
 		}
 		assertTrue(object != null, message);
-		pass(message);
+		//pass(message);
 	}
 
 	/**
@@ -608,7 +608,7 @@ public class Assertion {
 		if (object != null) {
 			failNotSame(object, null, message);
 		}
-		pass(message);
+		//pass(message);
 	}
 
 	/**
@@ -624,7 +624,7 @@ public class Assertion {
 	 */
 	public static void assertSame(Object actual, Object expected, String message) {
 		if (expected == actual) {
-			pass(message);
+			//pass(message);
 			return;
 		}
 		failNotSame(actual, expected, message);
@@ -659,7 +659,7 @@ public class Assertion {
 		if (expected == actual) {
 			failSame(actual, expected, message);
 		}
-		pass(message);
+		//pass(message);
 	}
 
 	/**
@@ -702,7 +702,7 @@ public class Assertion {
 	public static void assertEquals(Collection<?> actual,
 			Collection<?> expected, String message) {
 		if (actual == expected) {
-			pass(message);
+			//pass(message);
 			return;
 		}
 
@@ -764,7 +764,7 @@ public class Assertion {
 	public static void assertEquals(Iterator<?> actual, Iterator<?> expected,
 			String message) {
 		if (actual == expected) {
-			pass(message);
+			//pass(message);
 			return;
 		}
 
@@ -838,7 +838,7 @@ public class Assertion {
 	public static void assertEquals(Iterable<?> actual, Iterable<?> expected,
 			String message) {
 		if (actual == expected) {
-			pass(message);
+			//pass(message);
 			return;
 		}
 

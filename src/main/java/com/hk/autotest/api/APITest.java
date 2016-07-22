@@ -18,7 +18,7 @@ import org.testng.annotations.Listeners;
 import org.testng.xml.XmlTest;
 
 //import com.ctrip.cap.CapLogger;
-//import com.hk.autotest.apirun.domain.APIRun;
+import com.hk.autotest.api.APIRun;
 import com.hk.autotest.internal.data.DataMoude.DataServiceHolder;
 import com.hk.autotest.domain.Context;
 import com.hk.autotest.internal.suite.JobSetUpListener;

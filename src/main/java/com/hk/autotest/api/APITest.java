@@ -61,13 +61,17 @@ public class APITest {
 		URI uri = request.getServiceURI();
 		String requestType = uri.getScheme() + "://" + uri.getHost()
 				+ uri.getPath();
+		System.out.println(requestType);
+		
 		apiRun.setRequestURI(requestType);
-		Long caseInfoId = contextHolder.get().getCaseInfo().getCaseInfoId();
-		Long caseId = contextHolder.get().getCaseInfo().getCaseId();
+		//System.out.println(contextHolder.get().getCaseInfo());
+		//Long caseInfoId = contextHolder.get().getCaseInfo().getCaseInfoId();
+		//System.out.println(caseInfoId);
+		//Long caseId = contextHolder.get().getCaseInfo().getCaseId();
 		String ip = NetUtils.getLocalIp();
 		apiRun.setCallerIp(ip);
-		apiRun.setCaseInfoId(caseInfoId);
-		apiRun.setCaseId(caseId);
+		//apiRun.setCaseInfoId(caseInfoId);
+		//apiRun.setCaseId(caseId);
 		try {
 			APIResponse response = apiDriver.execute(request);
 			return response;

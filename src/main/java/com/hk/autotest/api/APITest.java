@@ -35,7 +35,6 @@ import com.hk.autotest.reporter.CapReporter;
 /**
  * Currently build on Http 1.1 ,API test has many types,but Http stand in the
  * breach
- * 
  * relieves you from having to deal with connection management and resource
  * deallocation.
  * 

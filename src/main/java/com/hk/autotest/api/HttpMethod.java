@@ -10,7 +10,7 @@ import org.apache.http.client.methods.HttpPut;
 /**
  * for new http user
  * 
- * @author ltyao
+ * @author 
  *
  */
 
